@@ -1,0 +1,14 @@
+import pymysql
+class DaoEmp:
+    def __init__(self):
+        self.conn = pymysql.connect(host='localhost', 
+                        user='root', 
+                        password='python', 
+                        db='python',
+                        charset='utf8',
+                        port =3305)
+    def selects(self) : 
+        sql ="select * from emp"
+        self.curs.execute(sql)
+        rows = curs.fetchall()
+        return rows

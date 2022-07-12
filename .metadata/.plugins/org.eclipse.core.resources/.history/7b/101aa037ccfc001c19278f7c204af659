@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+{{a}}<br/>
+{{b}}<br/>
+
+   {% for i in b %}   
+   {{i}} <br/> 
+   {% endfor %}
+  
+   {% for j in c %}   
+   {{j}} <br/> 
+   {% endfor %}
+
+</body>
+</html>

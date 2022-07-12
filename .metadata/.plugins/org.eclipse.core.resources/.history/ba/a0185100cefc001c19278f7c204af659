@@ -1,0 +1,5 @@
+class DaoEmp:
+    def __init__(self):
+        self.age=1
+    def happyBirth(self) : 
+        self.age+=1

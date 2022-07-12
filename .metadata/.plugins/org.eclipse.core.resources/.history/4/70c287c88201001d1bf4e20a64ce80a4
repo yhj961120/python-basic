@@ -1,0 +1,49 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+function fn_list(){
+	var param = "";
+	param += "dummy=" + Math.random();
+	param += "&a=777";
+	$.ajax({
+		url : "ajaxlist",
+		data : param,
+		dataType : "json",
+		type : "post",
+		async: false,
+		success : function(res) {
+			console.log(res)
+		}
+	});
+}
+</script>
+</head>
+<body>
+<input id="it" type="text" value="good morning"  />
+<table border="1px">
+	<thead>
+		<tr>
+			<td>사번</td>
+			<td>이름</td>
+			<td>성별</td>
+			<td>주소</td>
+		</tr>
+	</thead>
+	<tbody id = "mytbody">
+		<tr>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+		</tr>
+	</tbody>
+</table>
+<a href="javascript:fn_list()">리스트보기</a>
+</body>
+</html>

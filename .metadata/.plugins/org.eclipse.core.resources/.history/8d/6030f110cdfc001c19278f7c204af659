@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+{{a}}<br/>
+
+
+{% for i in b %}
+{{i}}<br/>
+{% endfor %}
+
+{% for i in c %}
+{{i.e_id}} {{i.e_name}} {{i.sex}} {{i.addr}}<br/>
+{% endfor %}
+
+</body>
+</html>

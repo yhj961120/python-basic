@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+{% for e in c %}
+	<tr>
+		<td>{{e.e_id}}</td>
+		<td>{{e.e_name}}</td>
+		<td>{{e.sex}}</td>
+		<td>{{e.addr}}</td>
+	</tr>
+{% endfor %}
+</body>
+</html>

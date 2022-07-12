@@ -1,0 +1,29 @@
+from flask import Flask
+from flask.globals import request
+from flask.templating import render_template
+app = Flask(__name__)
+
+@app.route('/')
+def hello_world():
+    return 'Hello Flask'
+
+@app.route('/para')
+def para():
+    a = request.args.get('a')
+    return 'PARA'+a
+
+@app.route('/post',methods=['GET','POST'])
+def post():
+    a = request.form['a']
+    return 'POST'+a
+
+
+@app.route('/dyna')
+def dyna():
+    a = "홍길동"
+    b = ["홍길동","전우치","이순신"]
+    c = 
+    return render_template('dyna.html',a=a,b=b)
+
+if __name__ == '__main__':
+    app.run()

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<table>
+	<tr>
+		<td>사번</td>
+		<td>{{emp.e_id}}</td>
+		<td>사번</td>
+		<td>사번</td>
+	</tr>
+
+	
+</table>
+
+
+</body>
+</html>

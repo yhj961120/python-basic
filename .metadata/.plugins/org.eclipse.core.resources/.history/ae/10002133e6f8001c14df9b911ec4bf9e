@@ -1,0 +1,27 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<%
+	String p = request.getParameter("p");
+	String a= "good morning";
+	
+	int dan =Integer.parseInt(p);
+	
+	for(i=0; i<=9; i++){
+		for(j=0; j<=i; j++){
+			
+		}
+	}
+%>
+<% out.println(a); %>
+<% out.println(p); %>
+
+
+</body>
+</html>
